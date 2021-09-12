@@ -1,0 +1,20 @@
+.title{
+}
+.suptitle{
+  font-size: 1rem;
+  color: var(--grey);
+}
+.suptitleActive {
+  color: black;
+  border-bottom: 1px solid var(--second);
+}
+.separator{
+  display: inline-block;
+  background-color: var(--grey);
+  transform: rotate(45deg);
+  margin: 0 5px;
+  margin-bottom: .1rem;
+  --width: 5px;
+  width: var(--width);
+  height: var(--width);
+}

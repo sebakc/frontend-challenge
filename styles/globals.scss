@@ -1,0 +1,96 @@
+@import 'spacing.scss';
+@import 'btn.scss';
+@import 'primefaces.scss';
+:root {
+  --primary: rgb(50,50,50);
+  --second: rgb(149,59,88);
+  --color-1: rgb(164,146,118);
+  --color-2: rgb(235,219,188);
+  --color-3: rgb(140,139,120);
+  --color-4: rgb(208,162,174);
+  --grey: rgb(183,183,183);
+  --light: rgb(240,240,240);
+  --border-radius: 2px;
+  --bg: rgb(250,250,250);
+  --bg-hover: white;
+  --flex-direction: column;
+  @media screen and (min-width:850px){
+    --flex-direction: row;
+  }
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  color: var(--primary);
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.limit {
+  max-width: 900px;
+  margin: auto;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+hr {
+  border-top: 1px solid var(--light);
+}
+.d-block {
+  display: block;
+}
+.w100 {
+  width: 100%;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.card {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--light);
+  padding: 30px 35px;
+}
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5 {
+  --size: 3rem;
+}
+
+h1,.h1{
+  font-size: calc(var(--size));
+}
+h2,.h2{
+  font-size: calc(var(--size) * 0.75);
+}
+h3,.h3{
+  font-size: calc(var(--size) * 0.7);
+}
+h4,.h4{
+  font-size: calc(var(--size) * 0.65);
+}
+h5,.h5{
+  font-size: calc(var(--size) * 0.6);
+}

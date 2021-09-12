@@ -1,0 +1,20 @@
+.p-slider.app-slider {
+  background-color: var(--color-2);
+  .p-slider-range {
+    background-color: var(--second);
+  }
+  &:not(.p-disabled) {
+    .p-slider-handle{
+      &:hover {
+        background: var(--color-1);
+        border: none;
+      }
+    }
+  }
+  .p-slider-handle{
+    background-color: var(--second);
+    border: none;
+    border-radius: 0;
+    transform: rotate(45deg) scale(.6);
+  }
+}

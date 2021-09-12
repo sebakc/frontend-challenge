@@ -1,0 +1,123 @@
+.product {
+  cursor: pointer;
+  text-align: center;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--light);
+  padding: 30px 35px;
+  position: relative;
+  transition: ease-in-out all .2s;
+  background-color: var(--bg);
+  height: 100%;
+  width: 100%;
+  &:hover {
+    background-color: var(--bg-hover);
+  }
+  svg {
+    position: absolute;
+    left: 50%;
+    rect, path, circle {
+      transition: ease-in-out all .2s;
+      stroke: var(--light);
+    }
+    circle {
+      fill: white;
+    }
+  }
+  &:hover {
+    svg {
+      rect, path {
+        stroke: var(--second);
+      }
+    }
+  }
+  header {
+    svg {
+      margin-left: -33px;
+      top: 0;
+    }
+    label {
+      color: red;
+      font-size: .7rem;
+    }
+    h2 {
+      min-height: 56px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    span {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      background-color: var(--second);
+      color: var(--light);
+      font-size: 0.8rem;
+      padding: 2px 7px;
+      border-radius: var(--border-radius);
+    }
+  }
+  div {
+    width: 100%;
+    height: 0;
+    padding-bottom: 150%;
+    img {
+      object-fit: contain;
+    }
+  }
+  &:hover {
+    footer {
+      a {
+        opacity: 1;
+      }
+    }
+  }
+  footer {
+    span {
+      font-weight: bold;
+      font-size: 1.2rem;
+      display: block;
+      width: fit-content;
+      margin: auto;
+      position: relative;
+      sub{
+        position: absolute;
+        color: var(--grey);
+        font-weight: 400;
+        text-decoration: line-through;
+        font-size: .8rem;
+        top: .3rem;
+        margin-left: 5px;
+      }
+    }
+    label {
+      color: var(--grey);
+      font-size: 0.7rem;
+    }
+    svg {
+      margin-left: -25px;
+      bottom: -1px;
+    }
+    a {
+      z-index: 1;
+      transition: ease-in-out all .2s;
+      opacity: 0;
+      display: block;
+      background-color: var(--second);
+      color: var(--light);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      margin-left: -20px;
+      left: 50%;
+      width: 40px;
+      height: 40px;
+      bottom: 0;
+      margin-bottom: -20px;
+    }
+  }
+}

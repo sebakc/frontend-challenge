@@ -1,0 +1,57 @@
+$n: 10;
+@for $i from 0 through $n {
+  .m-#{$i},.mt-#{$i},.mb-#{$i},.ml-#{$i},.mr-#{$i},.my-#{$i},.mx-#{$i}{
+    --margin: 1rem;
+  }
+  .m-#{$i} {
+    margin: calc(var(--margin) * #{$i} * 0.5);
+  }
+  .mt-#{$i} {
+    margin-top: calc(var(--margin) * #{$i} * 0.5);
+  }
+  .mb-#{$i} {
+    margin-bottom: calc(var(--margin) * #{$i} * 0.5);
+  }
+  .ml-#{$i} {
+    margin-left: calc(var(--margin) * #{$i} * 0.5);
+  }
+  .mr-#{$i} {
+    margin-right: calc(var(--margin) * #{$i} * 0.5);
+  }
+  .my-#{$i} {
+    margin: calc(var(--margin) * #{$i} * 0.5) 0;
+  }
+  .mx-#{$i} {
+    margin: 0 calc(var(--margin) * #{$i} * 0.5);
+  }
+}
+.mt-0{
+  margin-top: calc(var(--margin));
+}
+
+@for $i from 0 through $n {
+  .p-#{$i},.pt-#{$i},.pb-#{$i},.pl-#{$i},.pr-#{$i},.py-#{$i},.px-#{$i}{
+    --padding: 1rem;
+  }
+  .p-#{$i} {
+    padding: calc(var(--padding) * #{$i} * 0.5);
+  }
+  .pt-#{$i} {
+    padding-top: calc(var(--padding) * #{$i} * 0.5);
+  }
+  .pb-#{$i} {
+    padding-bottom: calc(var(--padding) * #{$i} * 0.5);
+  }
+  .pl-#{$i} {
+    padding-left: calc(var(--padding) * #{$i} * 0.5);
+  }
+  .pr-#{$i} {
+    padding-right: calc(var(--padding) * #{$i} * 0.5);
+  }
+  .py-#{$i} {
+    padding: calc(var(--padding) * #{$i} * 0.5) 0;
+  }
+  .px-#{$i} {
+    padding: 0 calc(var(--padding) * #{$i} * 0.5);
+  }
+}
