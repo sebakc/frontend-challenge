@@ -8,7 +8,7 @@ type Props = {
 
 
 const ProductFilter: FunctionComponent<Props> = ({ products }) => {
-  const [rangeValues, setRangeValues] = useState([10,90]);
+  const [rangeValues, setRangeValues] = useState<[number,number]>([10,90]);
 
   return(
     <aside id="filters" className="card">
@@ -21,7 +21,7 @@ const ProductFilter: FunctionComponent<Props> = ({ products }) => {
           <div className="p-col-6 text-right">{rangeValues[1]}</div>
         </div>
       </div>
-      <hr className="my-3" />
+      <hr className="my-1" />
     </aside>
   )
 }

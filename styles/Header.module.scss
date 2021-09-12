@@ -43,7 +43,7 @@
             height: 4px;
             background-color: var(--second);
             transform: rotate(45deg);
-            display: block;
+            display: var(--hide-xs);
           }
         }
         a {

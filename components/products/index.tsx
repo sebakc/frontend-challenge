@@ -9,7 +9,7 @@ type Props = {
 const Products: FunctionComponent<Props> = ({ products }) => (
   <div className="p-grid">
     {products.map((product: IProduct) => (
-      <div key={product.id} className="p-col-4">
+      <div key={product.id} className="p-col-12 p-md-6 p-lg-4">
         <Product product={product} />
       </div>
     ))}
