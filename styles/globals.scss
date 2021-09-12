@@ -15,8 +15,10 @@
   --bg-hover: white;
   --flex-direction: column;
   --hide-xs: none;
+  --show-xs: block;
   @media screen and (min-width:850px){
     --hide-xs: block;
+    --show-xs: none;
     --flex-direction: row;
   }
 }
@@ -39,7 +41,7 @@ a {
 }
 
 .limit {
-  max-width: 900px;
+  max-width: 1300px;
   margin: auto;
 }
 
@@ -95,4 +97,18 @@ h4,.h4{
 }
 h5,.h5{
   font-size: calc(var(--size) * 0.6);
+}
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  &.list{
+    li{
+      line-height:200%;
+    }
+  }
+}
+.social-network-icon{
+  width: 30px;
+  display: inline-block;
 }

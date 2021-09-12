@@ -39,7 +39,7 @@ const Home: NextPage = () => {
       <div className="p-col-12 p-md-8 p-lg-9">
         <Products products={data} />
         <div className="text-center my-4">
-          <button onClick={() => update()} className="btn btn-light">Ver más</button>
+          <button onClick={() => update()} className="btn btn-light btn-big">Ver más</button>
         </div>
       </div>
     </div>

@@ -1,10 +1,20 @@
 .bars {
+  display: var(--show-xs);
   i {
     font-size: 2rem;
   }
 }
 .header {
   background-color: rgb(249,247,245);
+  position: relative;
+  &::before{
+    position: absolute;
+    content: "";
+    opacity: .15;
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/pattern.png);
+  }
   .topbar {
     .topbarLogo {
       display: flex;
@@ -26,7 +36,6 @@
   }
   nav {
     ul {
-      border-top: 1px solid var(--primary);
       li {
         text-transform: uppercase;
         position: relative;
@@ -65,11 +74,14 @@
             overflow: hidden;
             visibility: hidden;
           }
-          &:hover{
+          &:hover {
             font-weight: bold;
           }
         }
       }
     }
   }
+}
+.active {
+  font-weight: bold;
 }
