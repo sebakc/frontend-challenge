@@ -5,7 +5,6 @@ import ProductFilter from '../components/productFilter'
 import IProduct from '../interfaces/Product'
 import SectionTitle from '../components/sectionTitle'
 
-//import { useState } from 'react';
 import {
   useAppDispatch,
   useAppSelector,
@@ -15,6 +14,7 @@ import {
   selectProducts,
 } from '../features/product/productItems';
 
+let page = 1
 
 const Home: NextPage = () => {
   const {
@@ -24,10 +24,6 @@ const Home: NextPage = () => {
   } = useAppSelector(selectProducts);
   const dispatch = useAppDispatch();
 
-
-  const update = () => {
-    dispatch(getProducts())
-  }
   return (
     <div className={`${styles.container} p-grid p-grid-nogutter`}>
       <div className="p-col-12">
@@ -39,7 +35,7 @@ const Home: NextPage = () => {
       <div className="p-col-12 p-md-8 p-lg-9">
         <Products products={data} />
         <div className="text-center my-4">
-          <button onClick={() => update()} className="btn btn-light btn-big">Ver más</button>
+          <button onClick={() => { page++; dispatch(getProducts(page)) } } className="btn btn-light btn-big">Ver más</button>
         </div>
       </div>
     </div>

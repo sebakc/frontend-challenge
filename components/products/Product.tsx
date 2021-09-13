@@ -16,8 +16,6 @@ const Products: FunctionComponent<Props> = ({ product }) => {
   }
   return (
     <article className={ProductStyle.product}>
-
-
       <header>
         <svg width="66" height="31" viewBox="0 0 66 31" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="1.47186" width="94.0833" height="94.0833" transform="matrix(0.735931 -0.677056 0.735931 0.677056 -37.322 -33.3235)" fill="white" strokeWidth="2"/>
@@ -29,7 +27,9 @@ const Products: FunctionComponent<Props> = ({ product }) => {
           {product.first_brewed}
         </label>
         <h2>{ formatName(product.name) }</h2>
-        <span>10 %</span>
+        <sup>
+          10 %
+        </sup>
       </header>
       <div>
         <Image src={product.image_url} alt="site logo" width={200} height={90} />
